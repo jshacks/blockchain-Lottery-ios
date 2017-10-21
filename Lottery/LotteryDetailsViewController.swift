@@ -7,21 +7,43 @@
 //
 
 import UIKit
-import CountdownLabel
+import QRCode
 
 class LotteryDetailsViewController: UIViewController{
-    var extraction: LotteryExtraction!
-    @IBOutlet weak var countDownLabel: CountdownLabel!
-    
+    var lottery: Lottery? = Lottery(name: "Cea mai loterie",
+                                    address: "someWallet",
+                                    history:
+        [LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date())],
+                                    numberOfParticipantsRequired: 15)
+    var didLongPressBool = false
+    @IBOutlet weak var codeImageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        particlesAt(position: CGPoint(x: countDownLabel.frame.midX, y: countDownLabel.frame.midY))
-//        self.title = extraction.name
+        addQR()
     }
 
-//    func startCountDown(){
-//        countDownLabel.animationType = CountdownEffect.Evaporate
-//        countDownLabel.setCountDownDate(targetDate: lottery.endDate! as NSDate)
-//        countDownLabel.start()
-//    }
+    func addQR(){
+        var code = QRCode(lottery?.address ?? "")
+        code?.backgroundColor = CIColor(red: 33/255, green: 45/255, blue: 58/255, alpha: 1)
+        code?.color = .white
+        codeImageView.image = code?.image
+    }
+
+    func addLongTap(){
+//        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress))
+//        lotteryTableView.addGestureRecognizer(recognizer)
+    }
+
+    @objc func didLongPress(_ recognizer: UILongPressGestureRecognizer){
+        if recognizer.state == .ended{
+            didLongPressBool = false
+            return
+        }
+        guard !didLongPressBool else {return}
+        didLongPressBool = true
+        UIPasteboard.general.string = lottery?.address
+        view.makeToast("Address has been pasted", duration: 2, position: .bottom)
+    }
 }

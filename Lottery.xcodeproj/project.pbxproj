@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52A007321F9B6AE600FED649 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A007311F9B6AE600FED649 /* MyAccountViewController.swift */; };
 		52A007341F9B70B600FED649 /* ParticleEffectsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */; };
 		52A007401F9BA5A800FED649 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A007361F9BA5A200FED649 /* Lato-HairlineItalic.ttf */; };
 		52A007411F9BA5A800FED649 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A007371F9BA5A300FED649 /* Lato-Hairline.ttf */; };
@@ -19,6 +18,7 @@
 		52A007471F9BA5A800FED649 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0073D1F9BA5A600FED649 /* Lato-LightItalic.ttf */; };
 		52A007481F9BA5A800FED649 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0073E1F9BA5A700FED649 /* Lato-Bold.ttf */; };
 		52A007491F9BA5A800FED649 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0073F1F9BA5A700FED649 /* Lato-Regular.ttf */; };
+		52A0074B1F9BC7DE00FED649 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0074A1F9BC7DE00FED649 /* CustomNavigationController.swift */; };
 		52C2ADF31F9B4749005B495A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2ADF21F9B4749005B495A /* AppDelegate.swift */; };
 		52C2ADF81F9B4749005B495A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C2ADF61F9B4749005B495A /* Main.storyboard */; };
 		52C2ADFA1F9B4749005B495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C2ADF91F9B4749005B495A /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 		52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */; };
 		52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9FCB1F9B536C000F5012 /* LotteryWebService.swift */; };
 		52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9FCD1F9B5409000F5012 /* WebService.swift */; };
-		9810ADE03691912FE88508CF /* Pods_Lottery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33483F1BD62F04AB7FBD98FC /* Pods_Lottery.framework */; };
+		5DF5596AA1D7BE37F9B56AD5 /* Pods_Lottery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8718755B33B75310F58EA2 /* Pods_Lottery.framework */; };
 		BB3A85D41F9B5751009691E7 /* LotteryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3A85D31F9B5751009691E7 /* LotteryTableViewController.swift */; };
 		BB3A85DD1F9B57BA009691E7 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3A85DC1F9B57BA009691E7 /* LotteryTests.swift */; };
 		BB3A85E51F9B57EF009691E7 /* AuthWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3A85E41F9B57EF009691E7 /* AuthWebService.swift */; };
@@ -51,9 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		096FD32691025778AE187C2B /* Pods-Lottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lottery/Pods-Lottery.debug.xcconfig"; sourceTree = "<group>"; };
-		33483F1BD62F04AB7FBD98FC /* Pods_Lottery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52A007311F9B6AE600FED649 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEffectsExtension.swift; sourceTree = "<group>"; };
 		52A007361F9BA5A200FED649 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
 		52A007371F9BA5A300FED649 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
@@ -65,6 +62,7 @@
 		52A0073D1F9BA5A600FED649 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		52A0073E1F9BA5A700FED649 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		52A0073F1F9BA5A700FED649 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		52A0074A1F9BC7DE00FED649 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		52C2ADEF1F9B4749005B495A /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C2ADF21F9B4749005B495A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C2ADF71F9B4749005B495A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,7 +75,8 @@
 		52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryDetailsViewController.swift; sourceTree = "<group>"; };
 		52FE9FCB1F9B536C000F5012 /* LotteryWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryWebService.swift; sourceTree = "<group>"; };
 		52FE9FCD1F9B5409000F5012 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		B968699C4DE7E29FA7385FAD /* Pods-Lottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottery/Pods-Lottery.release.xcconfig"; sourceTree = "<group>"; };
+		5C195FA3867CFDA6034610CA /* Pods-Lottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottery/Pods-Lottery.release.xcconfig"; sourceTree = "<group>"; };
+		AD8718755B33B75310F58EA2 /* Pods_Lottery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3A85D31F9B5751009691E7 /* LotteryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryTableViewController.swift; sourceTree = "<group>"; };
 		BB3A85DA1F9B57B9009691E7 /* LotteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3A85DC1F9B57BA009691E7 /* LotteryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		BB3A85EA1F9B59F2009691E7 /* LoginViewContrioller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContrioller.swift; sourceTree = "<group>"; };
 		BB3A85EC1F9B5A31009691E7 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		BBAF8FF11F9B53DF00816538 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C5BCDA8BA55028BD0DEE89C9 /* Pods-Lottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lottery/Pods-Lottery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9810ADE03691912FE88508CF /* Pods_Lottery.framework in Frameworks */,
+				5DF5596AA1D7BE37F9B56AD5 /* Pods_Lottery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,11 +109,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		368841F07A23493E985997E2 /* Pods */ = {
+		29A21B89AAC486667A2ACCA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				096FD32691025778AE187C2B /* Pods-Lottery.debug.xcconfig */,
-				B968699C4DE7E29FA7385FAD /* Pods-Lottery.release.xcconfig */,
+				C5BCDA8BA55028BD0DEE89C9 /* Pods-Lottery.debug.xcconfig */,
+				5C195FA3867CFDA6034610CA /* Pods-Lottery.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 				52C2ADF11F9B4749005B495A /* Lottery */,
 				BB3A85DB1F9B57BA009691E7 /* LotteryTests */,
 				52C2ADF01F9B4749005B495A /* Products */,
-				368841F07A23493E985997E2 /* Pods */,
-				AAD33240D8C0E9DF14272903 /* Frameworks */,
+				29A21B89AAC486667A2ACCA0 /* Pods */,
+				D60363530005BE117DABB104 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +171,8 @@
 				52C2ADFB1F9B4749005B495A /* LaunchScreen.storyboard */,
 				52C2ADFE1F9B4749005B495A /* Info.plist */,
 				52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */,
-				52A007311F9B6AE600FED649 /* MyAccountViewController.swift */,
 				52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */,
+				52A0074A1F9BC7DE00FED649 /* CustomNavigationController.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -197,14 +197,6 @@
 			path = WebServices;
 			sourceTree = "<group>";
 		};
-		AAD33240D8C0E9DF14272903 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				33483F1BD62F04AB7FBD98FC /* Pods_Lottery.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BB3A85D51F9B5778009691E7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +216,14 @@
 			path = LotteryTests;
 			sourceTree = "<group>";
 		};
+		D60363530005BE117DABB104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD8718755B33B75310F58EA2 /* Pods_Lottery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,12 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C2AE011F9B4749005B495A /* Build configuration list for PBXNativeTarget "Lottery" */;
 			buildPhases = (
-				A18675641E2043B44D95D6D7 /* [CP] Check Pods Manifest.lock */,
+				FF6783A9B9E77BE6CE9EBF0E /* [CP] Check Pods Manifest.lock */,
 				52C2ADEB1F9B4749005B495A /* Sources */,
 				52C2ADEC1F9B4749005B495A /* Frameworks */,
 				52C2ADED1F9B4749005B495A /* Resources */,
-				413C0C6AD961BC930B70C5C0 /* [CP] Embed Pods Frameworks */,
-				3AFED8BE84F8E5618F81D8BE /* [CP] Copy Pods Resources */,
+				7AA85D5230E02D1880FA9CF5 /* [CP] Embed Pods Frameworks */,
+				CA993761B3B163293DF05D93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,7 +337,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3AFED8BE84F8E5618F81D8BE /* [CP] Copy Pods Resources */ = {
+		7AA85D5230E02D1880FA9CF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lottery/Pods-Lottery-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lottery/Pods-Lottery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA993761B3B163293DF05D93 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,31 +378,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lottery/Pods-Lottery-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		413C0C6AD961BC930B70C5C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Lottery/Pods-Lottery-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountdownLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lottery/Pods-Lottery-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A18675641E2043B44D95D6D7 /* [CP] Check Pods Manifest.lock */ = {
+		FF6783A9B9E77BE6CE9EBF0E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,9 +404,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */,
-				52A007321F9B6AE600FED649 /* MyAccountViewController.swift in Sources */,
 				52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */,
 				52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */,
+				52A0074B1F9BC7DE00FED649 /* CustomNavigationController.swift in Sources */,
 				52C2AE061F9B49B8005B495A /* LotteryTableViewDataSource.swift in Sources */,
 				BB3A85ED1F9B5A31009691E7 /* UserDefaults.swift in Sources */,
 				BB3A85D41F9B5751009691E7 /* LotteryTableViewController.swift in Sources */,
@@ -566,7 +568,7 @@
 		};
 		52C2AE021F9B4749005B495A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 096FD32691025778AE187C2B /* Pods-Lottery.debug.xcconfig */;
+			baseConfigurationReference = C5BCDA8BA55028BD0DEE89C9 /* Pods-Lottery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +577,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ccucu.Lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lottery/bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -582,7 +585,7 @@
 		};
 		52C2AE031F9B4749005B495A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B968699C4DE7E29FA7385FAD /* Pods-Lottery.release.xcconfig */;
+			baseConfigurationReference = 5C195FA3867CFDA6034610CA /* Pods-Lottery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +594,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ccucu.Lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lottery/bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

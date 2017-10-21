@@ -9,5 +9,7 @@ target 'Lottery' do
 	pod 'RxSwift', '~> 4.0'
 	pod 'Alamofire'
 	pod 'RxCocoa', '~> 4.0'
-    pod 'CountdownLabel', '~> 3.0'
+    pod 'QRCode'
+#    pod 'QRCodeGenerator-hicool’, :git=> ‘https://github.com/jindegege/QRCodeGenerator.git'
+    pod 'Toast-Swift', :git => 'https://github.com/scalessec/Toast-Swift.git', :branch => 'feature/Swift-4'
 end
