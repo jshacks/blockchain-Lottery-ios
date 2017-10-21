@@ -217,7 +217,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Uk-hh-yZj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Current Extraction" id="FFm-rb-gub"/>
+                    <navigationItem key="navigationItem" title="Current Extraction" id="FFm-rb-gub">
+                        <barButtonItem key="rightBarButtonItem" title="Previous extractions" id="aAC-in-4Wr"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="codeImageView" destination="cFn-M6-AkS" id="cbO-Nx-KQf"/>
                     </connections>
