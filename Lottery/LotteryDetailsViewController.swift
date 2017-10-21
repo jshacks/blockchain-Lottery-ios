@@ -10,17 +10,18 @@ import UIKit
 import CountdownLabel
 
 class LotteryDetailsViewController: UIViewController{
-    var lottery: Lottery!
+    var extraction: LotteryExtraction!
     @IBOutlet weak var countDownLabel: CountdownLabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        startCountDown()
+//        particlesAt(position: CGPoint(x: countDownLabel.frame.midX, y: countDownLabel.frame.midY))
+//        self.title = extraction.name
     }
 
-    func startCountDown(){
-        countDownLabel.animationType = CountdownEffect.Evaporate
-        countDownLabel.setCountDownDate(targetDate: lottery.endDate! as NSDate)
-        countDownLabel.start()        
-    }
+//    func startCountDown(){
+//        countDownLabel.animationType = CountdownEffect.Evaporate
+//        countDownLabel.setCountDownDate(targetDate: lottery.endDate! as NSDate)
+//        countDownLabel.start()
+//    }
 }

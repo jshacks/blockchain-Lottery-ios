@@ -24,7 +24,7 @@ class LotteryTableViewController: UIViewController {
 
     func didSelectItem(_ event: Event<IndexPath>){
         guard let index = event.element else {return}
-        let lottery = dataSource.lotteries[index.row]
+        let lottery = dataSource.lottery?.history?[index.row]
         lotteryTableView.deselectRow(at: index, animated: true)
         performSegue(withIdentifier: "presentLottery", sender: lottery)
     }
@@ -36,10 +36,10 @@ class LotteryTableViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
 
-        if let lottery = sender as? Lottery,
+        if let lotteryExtraction = sender as? LotteryExtraction,
             let destination = segue.destination as? LotteryDetailsViewController,
             segue.identifier == "presentLottery"{
-            destination.lottery = lottery
+            destination.extraction = lotteryExtraction
         }
     }
 

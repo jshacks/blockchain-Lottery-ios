@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A007321F9B6AE600FED649 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A007311F9B6AE600FED649 /* MyAccountViewController.swift */; };
+		52A007341F9B70B600FED649 /* ParticleEffectsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */; };
 		52C2ADF31F9B4749005B495A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2ADF21F9B4749005B495A /* AppDelegate.swift */; };
 		52C2ADF81F9B4749005B495A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C2ADF61F9B4749005B495A /* Main.storyboard */; };
 		52C2ADFA1F9B4749005B495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C2ADF91F9B4749005B495A /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		096FD32691025778AE187C2B /* Pods-Lottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lottery/Pods-Lottery.debug.xcconfig"; sourceTree = "<group>"; };
 		33483F1BD62F04AB7FBD98FC /* Pods_Lottery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A007311F9B6AE600FED649 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEffectsExtension.swift; sourceTree = "<group>"; };
 		52C2ADEF1F9B4749005B495A /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C2ADF21F9B4749005B495A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C2ADF71F9B4749005B495A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,14 +127,16 @@
 				52C2ADF21F9B4749005B495A /* AppDelegate.swift */,
 				BB3A85EC1F9B5A31009691E7 /* UserDefaults.swift */,
 				BBAF8FF11F9B53DF00816538 /* User.swift */,
+				52C2AE091F9B4C5F005B495A /* Lottery.swift */,
 				BB3A85D51F9B5778009691E7 /* Login */,
 				52C2AE041F9B49A0005B495A /* LotteryList */,
 				52C2ADF61F9B4749005B495A /* Main.storyboard */,
 				52C2ADF91F9B4749005B495A /* Assets.xcassets */,
 				52C2ADFB1F9B4749005B495A /* LaunchScreen.storyboard */,
 				52C2ADFE1F9B4749005B495A /* Info.plist */,
-				52C2AE091F9B4C5F005B495A /* Lottery.swift */,
 				52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */,
+				52A007311F9B6AE600FED649 /* MyAccountViewController.swift */,
+				52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -351,8 +357,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C2AE0C1F9B4DCC005B495A /* LotteryProvider.swift in Sources */,
-				52C2ADF51F9B4749005B495A /* LotteryTableViewController.swift in Sources */,
 				52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */,
+				52A007321F9B6AE600FED649 /* MyAccountViewController.swift in Sources */,
 				52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */,
 				52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */,
 				52C2AE061F9B49B8005B495A /* LotteryTableViewDataSource.swift in Sources */,
@@ -360,6 +366,7 @@
 				BB3A85D41F9B5751009691E7 /* LotteryTableViewController.swift in Sources */,
 				52C2ADF31F9B4749005B495A /* AppDelegate.swift in Sources */,
 				BB3A85EB1F9B59F2009691E7 /* LoginViewContrioller.swift in Sources */,
+				52A007341F9B70B600FED649 /* ParticleEffectsExtension.swift in Sources */,
 				BB3A85E71F9B5896009691E7 /* UserService.swift in Sources */,
 				52C2AE0A1F9B4C5F005B495A /* Lottery.swift in Sources */,
 				52C2AE081F9B4AA1005B495A /* LotteryListCell.swift in Sources */,

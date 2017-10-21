@@ -14,9 +14,7 @@ class LottteryWebService: WebService{
             guard response.error == nil,
                 let responseData = response.data
                 else {return}
-            let decoder = JSONDecoder()
-            let lotteries = try! decoder.decode([Lottery].self, from: responseData)
-            callback(lotteries)
+            callback(try! JSONDecoder().decode([Lottery].self, from: responseData))
         })
     }
 }

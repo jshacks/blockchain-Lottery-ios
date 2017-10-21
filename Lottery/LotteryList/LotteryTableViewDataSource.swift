@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
-    var lotteries: [Lottery] = [Lottery(id: "someId", name: "Loterie #1", endDate: Date().addingTimeInterval(5 * 60), winner: nil, founder: nil, comision: nil)]
+    var lottery: Lottery?
     var lotteryProvider: LotteryProvider?
     weak var tableView: UITableView?
     var disposeBag = DisposeBag()
@@ -23,18 +23,25 @@ class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
 //        lotteryProvider?.lotteries.asObservable().subscribe(lotteriesDidChange).disposed(by: disposeBag)
     }
 
-    func lotteriesDidChange(_ event: Event<[Lottery]>){
-        self.lotteries = event.element ?? []
+    func lotteriesDidChange(_ event: Event<Lottery>){
+        self.lottery = event.element
         self.tableView?.reloadData()
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lotteries.count
+        if section == 0{
+            return 1
+        }
+        return lottery?.history?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lotteryCell") as? LotterListCell
-        cell?.nameLabel.text = lotteries[indexPath.row].name
+//        cell?.nameLabel.text = lotteries[indexPath.row].name
         return cell ?? UITableViewCell()
     }
 }

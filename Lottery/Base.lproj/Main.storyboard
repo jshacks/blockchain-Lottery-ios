@@ -10,6 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--My Account View Controller-->
+        <scene sceneID="XZp-AL-HM7">
+            <objects>
+                <viewController id="KcS-MD-XeB" customClass="MyAccountViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rmi-xW-mZs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="hKT-Sx-otm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgA-ex-iRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="-520"/>
+        </scene>
         <!--Lotteries-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -86,7 +101,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lotteries" id="9Zb-zz-IyF">
-                        <barButtonItem key="leftBarButtonItem" title="Account" id="Ssp-OL-eex"/>
+                        <barButtonItem key="leftBarButtonItem" title="Account" id="Ssp-OL-eex">
+                            <connections>
+                                <segue destination="KcS-MD-XeB" kind="show" identifier="showMyAccount" id="Hla-ay-8kT"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Log out" id="qYL-0p-dwd">
                             <connections>
                                 <action selector="logOut:" destination="BYZ-38-t0r" id="jkV-9T-jv6"/>

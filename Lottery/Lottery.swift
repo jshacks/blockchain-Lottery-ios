@@ -9,19 +9,28 @@
 import Foundation
 
 class Lottery: Codable{
-    let id: String?
     let name: String?
-    let endDate: Date?
-    var winner: String?
-    var founder: String?
-    var comision: Double?
+    let address: String?
+    var history: [LotteryExtraction]?
 
-    init(id: String, name: String, endDate: Date?, winner: String?, founder: String?, comision: Double?) {
-        self.id = id
+    init(name: String, address: String?, history: [LotteryExtraction]?){
         self.name = name
-        self.endDate = endDate
-        self.winner = winner
-        self.founder = founder
-        self.comision = comision
+        self.address = address
+        self.history = history
+    }
+}
+
+class LotteryExtraction: Codable{
+    enum ExtractionState: String, Codable {
+        case finished = "finished"
+        case running = "running"
+    }
+
+    var participants: [String]?
+    var state: ExtractionState?
+
+    init(participants: [String]?, state: ExtractionState?) {
+        self.participants = participants
+        self.state = state
     }
 }
