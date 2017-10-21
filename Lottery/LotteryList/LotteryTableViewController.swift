@@ -17,8 +17,9 @@ class LotteryTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        lotteryTableView.tableFooterView = UIView()
         dataSource = LotteryTableViewDataSource(tableView: lotteryTableView)
-        lotteryTableView.rx.itemSelected.asObservable().subscribe(didSelectItem).disposed(by: disposeBag)
+        lotteryTableView.rx.itemSelected.asObservable().subscribe(didSelectItem).disposed(by: disposeBag)        
     }
 
     func didSelectItem(_ event: Event<IndexPath>){

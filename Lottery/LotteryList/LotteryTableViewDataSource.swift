@@ -27,8 +27,6 @@ class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
         tableView.dataSource = self
         self.runningExtractions = self.lottery?.history?.filter({$0.state == .running}) ?? []
         self.finishedExtractions = self.lottery?.history?.filter({$0.state == .finished}) ?? []
-
-        //        sync()
     }
 
     func sync(){
