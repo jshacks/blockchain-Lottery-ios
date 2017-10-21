@@ -20,26 +20,8 @@ class LotteryTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lotteryTableView.tableFooterView = UIView()        
-        dataSource = LotteryTableViewDataSource(tableView: lotteryTableView)        
-        lotteryTableView.rx.itemSelected.asObservable().subscribe(didSelectItem).disposed(by: disposeBag)
+        dataSource = LotteryTableViewDataSource(tableView: lotteryTableView)
+        self.navigationItem.largeTitleDisplayMode = .never
     }
-
-    func didSelectItem(_ event: Event<IndexPath>){
-        guard let index = event.element else {return}
-        let lottery = dataSource.lottery?.history?[index.row]
-        lotteryTableView.deselectRow(at: index, animated: true)
-        performSegue(withIdentifier: "presentLottery", sender: lottery)
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-
-        if let lotteryExtraction = sender as? LotteryExtraction,
-            let destination = segue.destination as? LotteryDetailsViewController,
-            segue.identifier == "presentLottery"{
-//            destination.extraction = lotteryExtraction
-        }
-    }
-
 }
 

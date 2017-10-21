@@ -19,5 +19,6 @@ class CustomNavigationController: UINavigationController{
         super.viewDidLoad()
         let font = UIFont(name: "Lato-Bold", size: 24)!
         navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationBar.tintColor = .white
     }
 }

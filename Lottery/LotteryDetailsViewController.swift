@@ -7,21 +7,24 @@
 //
 
 import UIKit
+import RxCocoa
 import QRCode
 
 class LotteryDetailsViewController: UIViewController{
     var lottery: Lottery? = Lottery(name: "Cea mai loterie",
-                                    address: "someWallet",
+                                    address: "someRandomWallet",
                                     history:
         [LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
          LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date())],
                                     numberOfParticipantsRequired: 15)
     var didLongPressBool = false
     @IBOutlet weak var codeImageView: UIImageView!
-
+    var isShowingToast = false
     override func viewDidLoad() {
         super.viewDidLoad()
         addQR()
+        addTapToCopy()
+
     }
 
     func addQR(){
@@ -31,19 +34,16 @@ class LotteryDetailsViewController: UIViewController{
         codeImageView.image = code?.image
     }
 
-    func addLongTap(){
-//        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress))
-//        lotteryTableView.addGestureRecognizer(recognizer)
+    func addTapToCopy(){
+       let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didLongPress))
+        codeImageView.addGestureRecognizer(tapRecognizer)
+
     }
 
-    @objc func didLongPress(_ recognizer: UILongPressGestureRecognizer){
-        if recognizer.state == .ended{
-            didLongPressBool = false
-            return
-        }
-        guard !didLongPressBool else {return}
-        didLongPressBool = true
+    @objc func didLongPress(_ recognizer: UITapGestureRecognizer){
+        guard !isShowingToast else {return}
         UIPasteboard.general.string = lottery?.address
-        view.makeToast("Address has been pasted", duration: 2, position: .bottom)
+        isShowingToast = true
+        view.makeToast("Address has been pasted", duration: 2, position: .bottom, completion: {_ in self.isShowingToast = false})
     }
 }

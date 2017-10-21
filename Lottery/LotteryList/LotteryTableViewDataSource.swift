@@ -13,8 +13,18 @@ class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
     var lottery: Lottery? = Lottery(name: "Cea mai loterie",
                                     address: "someWallet",
                                     history:
-                                        [LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
-                                         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date())],
+        [LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date()),],
                                     numberOfParticipantsRequired: 15)
     var runningExtractions: [LotteryExtraction] = []
     var finishedExtractions: [LotteryExtraction] = []

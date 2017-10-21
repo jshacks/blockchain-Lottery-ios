@@ -15,18 +15,21 @@
         <array key="Lato-Black.ttf">
             <string>Lato-Black</string>
         </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Previous Extractions-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LotteryTableViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Previous Extractions" id="BYZ-38-t0r" customClass="LotteryTableViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSe-GJ-K8g">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSe-GJ-K8g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.12766814231872559" green="0.17564254999160767" blue="0.22556990385055542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lotteryCell" rowHeight="108" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
@@ -98,14 +101,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Previous Extractions" id="9Zb-zz-IyF"/>
                     <connections>
                         <outlet property="lotteryTableView" destination="pSe-GJ-K8g" id="ROf-lP-Otx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="134"/>
+            <point key="canvasLocation" x="332" y="856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t3b-1y-2wG">
@@ -150,13 +152,13 @@
         <!--Current Extraction-->
         <scene sceneID="sCZ-jL-l2U">
             <objects>
-                <viewController id="bV0-Dd-7Qq" customClass="LotteryDetailsViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Current Extraction" id="bV0-Dd-7Qq" customClass="LotteryDetailsViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUT-Ok-QdB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-Rt-puu">
-                                <rect key="frame" x="16" y="496" width="278" height="25.5"/>
+                                <rect key="frame" x="16" y="548.5" width="278" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-oB-SLB">
                                         <rect key="frame" x="0.0" y="0.0" width="184.5" height="25.5"/>
@@ -176,7 +178,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uik-Rq-uCS">
-                                <rect key="frame" x="16" y="537.5" width="344" height="25.5"/>
+                                <rect key="frame" x="16" y="590" width="344" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-7f-fvH">
                                         <rect key="frame" x="0.0" y="0.0" width="228.5" height="25.5"/>
@@ -195,7 +197,7 @@
                                     <constraint firstItem="HNR-7f-fvH" firstAttribute="width" secondItem="uik-Rq-uCS" secondAttribute="width" multiplier="2/3" id="jwz-yG-Xlw"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-M6-AkS">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-M6-AkS">
                                 <rect key="frame" x="37.5" y="132" width="300" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -203,13 +205,32 @@
                                     <constraint firstAttribute="height" constant="300" id="Ad8-Us-Eyt"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address: \\some_random_hash" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-fp-yoK">
+                                <rect key="frame" x="37.5" y="440" width="300.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="0.64937279929577463" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the qr code to copy the address to clipboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-6p-lEI">
+                                <rect key="frame" x="37" y="467.5" width="301" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="0.64937279930000003" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.1764705882352941" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="centerX" secondItem="uUT-Ok-QdB" secondAttribute="centerX" id="7XH-qf-h7f"/>
+                            <constraint firstItem="w5C-Rt-puu" firstAttribute="top" secondItem="hs6-6p-lEI" secondAttribute="bottom" constant="64" id="EKp-yw-PJw"/>
+                            <constraint firstItem="dbD-fp-yoK" firstAttribute="centerX" secondItem="cFn-M6-AkS" secondAttribute="centerX" id="IlN-fN-ymI"/>
                             <constraint firstItem="w5C-Rt-puu" firstAttribute="leading" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="TUk-Q8-W9I"/>
+                            <constraint firstItem="dbD-fp-yoK" firstAttribute="top" secondItem="cFn-M6-AkS" secondAttribute="bottom" constant="8" id="U08-1F-p0v"/>
+                            <constraint firstItem="hs6-6p-lEI" firstAttribute="trailing" secondItem="dbD-fp-yoK" secondAttribute="trailing" id="UC1-mA-Ukb"/>
+                            <constraint firstItem="dbD-fp-yoK" firstAttribute="trailing" secondItem="cFn-M6-AkS" secondAttribute="trailing" id="VJM-Jh-VtN"/>
                             <constraint firstItem="uik-Rq-uCS" firstAttribute="leading" secondItem="w5C-Rt-puu" secondAttribute="leading" id="XwC-h4-mgM"/>
-                            <constraint firstItem="w5C-Rt-puu" firstAttribute="top" secondItem="cFn-M6-AkS" secondAttribute="bottom" constant="64" id="epZ-sN-wkn"/>
+                            <constraint firstItem="hs6-6p-lEI" firstAttribute="top" secondItem="dbD-fp-yoK" secondAttribute="bottom" constant="8" id="fWN-Hl-l7s"/>
+                            <constraint firstItem="hs6-6p-lEI" firstAttribute="leading" secondItem="dbD-fp-yoK" secondAttribute="leading" id="jHG-gA-VH1"/>
+                            <constraint firstItem="dbD-fp-yoK" firstAttribute="leading" secondItem="cFn-M6-AkS" secondAttribute="leading" id="jkn-Tg-7Ca"/>
                             <constraint firstItem="uik-Rq-uCS" firstAttribute="top" secondItem="w5C-Rt-puu" secondAttribute="bottom" constant="16" id="ksl-VD-qmV"/>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="pTw-RS-uTl"/>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="top" secondItem="3Uk-hh-yZj" secondAttribute="top" constant="16" id="wSP-O1-4jJ"/>
@@ -218,7 +239,11 @@
                         <viewLayoutGuide key="safeArea" id="3Uk-hh-yZj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Current Extraction" id="FFm-rb-gub">
-                        <barButtonItem key="rightBarButtonItem" title="Previous extractions" id="aAC-in-4Wr"/>
+                        <barButtonItem key="rightBarButtonItem" title="Previous extractions" id="aAC-in-4Wr">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="VKB-iG-6Ay"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="codeImageView" destination="cFn-M6-AkS" id="cbO-Nx-KQf"/>
