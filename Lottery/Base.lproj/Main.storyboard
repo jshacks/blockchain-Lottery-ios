@@ -1,24 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDr-21-NO0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lottery Table View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LotteryTableViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSe-GJ-K8g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="523"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vpk-qS-sN9" id="WCq-pS-hjp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwS-jS-WPu">
+                                                    <rect key="frame" x="8" y="8" width="359" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="DwS-jS-WPu" secondAttribute="bottom" constant="8" id="QaB-Vd-L64"/>
+                                                <constraint firstItem="DwS-jS-WPu" firstAttribute="top" secondItem="WCq-pS-hjp" secondAttribute="top" constant="8" id="d4B-CI-QdQ"/>
+                                                <constraint firstItem="DwS-jS-WPu" firstAttribute="leading" secondItem="WCq-pS-hjp" secondAttribute="leading" constant="8" id="e8d-cn-cWz"/>
+                                                <constraint firstAttribute="trailing" secondItem="DwS-jS-WPu" secondAttribute="trailing" constant="8" id="uKd-L6-sFt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="DwS-jS-WPu" id="HhM-RD-0mN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-Uz-fMa">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvb-kn-g0q">
+                                        <rect key="frame" x="8" y="8" width="359" height="64"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Create new raffle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createNewLottery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UtQ-Wf-4Bl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="507-BI-oUb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yvb-kn-g0q" secondAttribute="trailing" constant="8" id="7iu-Mo-P2w"/>
+                                    <constraint firstItem="Yvb-kn-g0q" firstAttribute="leading" secondItem="HSQ-Uz-fMa" secondAttribute="leading" constant="8" id="ECM-pB-Gxj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yvb-kn-g0q" secondAttribute="bottom" constant="8" id="SFL-Tt-RPG"/>
+                                    <constraint firstItem="Yvb-kn-g0q" firstAttribute="top" secondItem="HSQ-Uz-fMa" secondAttribute="top" constant="8" id="uEI-q9-p4M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="A0A-cn-fo6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pSe-GJ-K8g" secondAttribute="trailing" id="Syv-bh-dad"/>
+                            <constraint firstItem="pSe-GJ-K8g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l7V-VD-MWI"/>
+                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nIh-lC-dco"/>
+                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pij-cc-SM1"/>
+                            <constraint firstItem="pSe-GJ-K8g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tFJ-hB-XTX"/>
+                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="top" secondItem="pSe-GJ-K8g" secondAttribute="bottom" id="u9J-RS-vSA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9Zb-zz-IyF"/>
+                    <connections>
+                        <outlet property="lotteryTableView" destination="pSe-GJ-K8g" id="ROf-lP-Otx"/>
+                        <outlet property="newRaffleButton" destination="Yvb-kn-g0q" id="Yxc-kh-hjW"/>
+                        <segue destination="bV0-Dd-7Qq" kind="show" identifier="newLottery" id="Scz-oW-bzH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sCZ-jL-l2U">
+            <objects>
+                <viewController id="bV0-Dd-7Qq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uUT-Ok-QdB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="3Uk-hh-yZj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7V-PG-QKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nEC-Bv-Ub4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDr-21-NO0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zLb-Tr-sS6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Oj6-K5-fPa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPi-VL-UdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="134"/>
         </scene>
     </scenes>
 </document>

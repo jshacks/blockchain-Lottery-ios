@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LotteryTableViewController: UIViewController {
+    @IBOutlet weak var lotteryTableView: UITableView!
+    @IBOutlet weak var newRaffleButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func createNewLottery(_ sender: Any) {
+        performSegue(withIdentifier: "newLottery", sender: self)
+    }
 
 }
 
