@@ -279,7 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5V5D684C2;
+				DEVELOPMENT_TEAM = 3ULF3E829Y;
 				INFOPLIST_FILE = Lottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ccucu.Lottery;
@@ -294,7 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5V5D684C2;
+				DEVELOPMENT_TEAM = 3ULF3E829Y;
 				INFOPLIST_FILE = Lottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ccucu.Lottery;
