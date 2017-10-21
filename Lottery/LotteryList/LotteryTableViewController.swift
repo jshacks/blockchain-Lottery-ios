@@ -7,24 +7,40 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LotteryTableViewController: UIViewController {
     @IBOutlet weak var lotteryTableView: UITableView!
     @IBOutlet weak var newRaffleButton: UIButton!
+    var dataSource: LotteryTableViewDataSource!
+    var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        dataSource = LotteryTableViewDataSource(tableView: lotteryTableView)
+        lotteryTableView.rx.itemSelected.asObservable().subscribe(didSelectItem).disposed(by: disposeBag)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func didSelectItem(_ event: Event<IndexPath>){
+        guard let index = event.element else {return}
+        let lottery = dataSource.lotteries[index.row]
+        lotteryTableView.deselectRow(at: index, animated: true)
+        performSegue(withIdentifier: "presentLottery", sender: lottery)
     }
 
     @IBAction func createNewLottery(_ sender: Any) {
         performSegue(withIdentifier: "newLottery", sender: self)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        if let lottery = sender as? Lottery,
+            let destination = segue.destination as? LotteryDetailsViewController,
+            segue.identifier == "presentLottery"{
+            destination.lottery = lottery
+        }
+    }
 }
 

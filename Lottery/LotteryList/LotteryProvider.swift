@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import RxSwift
 
 class LotteryProvider{
-    
+    var lotteries: Variable<[Lottery]> = Variable<[Lottery]>([])
+    let service =  LottteryWebService()
+
+    func sync(){
+        service.getAllLotteries(callback: {self.lotteries.value = $0})
+    }
 }

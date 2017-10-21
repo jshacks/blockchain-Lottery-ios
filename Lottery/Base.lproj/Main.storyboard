@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lottery Table View Controller-->
+        <!--Lotteries-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LotteryTableViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lotteryCell" rowHeight="60" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vpk-qS-sN9" id="WCq-pS-hjp">
@@ -84,31 +84,72 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9Zb-zz-IyF"/>
+                    <navigationItem key="navigationItem" title="Lotteries" id="9Zb-zz-IyF"/>
                     <connections>
                         <outlet property="lotteryTableView" destination="pSe-GJ-K8g" id="ROf-lP-Otx"/>
                         <outlet property="newRaffleButton" destination="Yvb-kn-g0q" id="Yxc-kh-hjW"/>
-                        <segue destination="bV0-Dd-7Qq" kind="show" identifier="newLottery" id="Scz-oW-bzH"/>
+                        <segue destination="bV0-Dd-7Qq" kind="show" identifier="presentLottery" id="Scz-oW-bzH"/>
+                        <segue destination="0R9-SI-KhE" kind="show" identifier="newLottery" id="6fG-To-vbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Lottery Details View Controller-->
         <scene sceneID="sCZ-jL-l2U">
             <objects>
-                <viewController id="bV0-Dd-7Qq" sceneMemberID="viewController">
+                <viewController id="bV0-Dd-7Qq" customClass="LotteryDetailsViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUT-Ok-QdB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:54:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhb-ZU-zEa" customClass="CountdownLabel" customModule="CountdownLabel">
+                                <rect key="frame" x="120" y="120" width="134" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="HaB-Od-GAx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HOz-hx-Tv7">
+                                <rect key="frame" x="16" y="219" width="343" height="424"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yhb-ZU-zEa" firstAttribute="centerX" secondItem="uUT-Ok-QdB" secondAttribute="centerX" id="57z-V9-5z7"/>
+                            <constraint firstItem="3Uk-hh-yZj" firstAttribute="bottom" secondItem="HOz-hx-Tv7" secondAttribute="bottom" constant="24" id="8rt-M3-hgy"/>
+                            <constraint firstItem="Yhb-ZU-zEa" firstAttribute="top" secondItem="3Uk-hh-yZj" secondAttribute="top" constant="56" id="Ggs-br-z0n"/>
+                            <constraint firstItem="HOz-hx-Tv7" firstAttribute="leading" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="KnV-uO-cqt"/>
+                            <constraint firstItem="3Uk-hh-yZj" firstAttribute="trailing" secondItem="HOz-hx-Tv7" secondAttribute="trailing" constant="16" id="Wmv-MH-kaE"/>
+                            <constraint firstItem="HOz-hx-Tv7" firstAttribute="top" secondItem="Yhb-ZU-zEa" secondAttribute="bottom" constant="24" id="bEr-kl-lcH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Uk-hh-yZj"/>
                     </view>
+                    <connections>
+                        <outlet property="countDownLabel" destination="Yhb-ZU-zEa" id="TFe-Zn-9O5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7V-PG-QKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1311" y="134"/>
+            <point key="canvasLocation" x="1309.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="571-eS-d7t">
+            <objects>
+                <viewController id="0R9-SI-KhE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tea-9b-3hl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="eID-dC-SqN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPY-hl-clQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="842"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nEC-Bv-Ub4">

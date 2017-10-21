@@ -10,6 +10,13 @@ import Alamofire
 
 class LottteryWebService: WebService{
     func getAllLotteries(callback: @escaping ([Lottery])->Void){
-        Alamofire.request(baseURL.appendingPathComponent("/lottery"))
+        Alamofire.request(baseURL.appendingPathComponent("/lottery"), method: .get, headers: authHeader).response(completionHandler: { response in
+            guard response.error == nil,
+                let responseData = response.data
+                else {return}
+            let decoder = JSONDecoder()
+            let lotteries = try! decoder.decode([Lottery].self, from: responseData)
+            callback(lotteries)
+        })
     }
 }

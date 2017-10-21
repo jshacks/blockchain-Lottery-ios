@@ -7,5 +7,7 @@ target 'Lottery' do
 
   # Pods for Lottery
 	pod 'RxSwift', '~> 4.0'
-	pod ‘Alamofire’
+	pod 'Alamofire'
+	pod 'RxCocoa', '~> 4.0'
+    pod 'CountdownLabel', '~> 3.0'
 end

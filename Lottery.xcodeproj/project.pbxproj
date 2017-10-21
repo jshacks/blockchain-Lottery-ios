@@ -16,6 +16,7 @@
 		52C2AE081F9B4AA1005B495A /* LotteryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE071F9B4AA1005B495A /* LotteryListCell.swift */; };
 		52C2AE0A1F9B4C5F005B495A /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE091F9B4C5F005B495A /* Lottery.swift */; };
 		52C2AE0C1F9B4DCC005B495A /* LotteryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE0B1F9B4DCC005B495A /* LotteryProvider.swift */; };
+		52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */; };
 		52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9FCB1F9B536C000F5012 /* LotteryWebService.swift */; };
 		52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9FCD1F9B5409000F5012 /* WebService.swift */; };
 		9810ADE03691912FE88508CF /* Pods_Lottery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33483F1BD62F04AB7FBD98FC /* Pods_Lottery.framework */; };
@@ -35,6 +36,7 @@
 		52C2AE071F9B4AA1005B495A /* LotteryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryListCell.swift; sourceTree = "<group>"; };
 		52C2AE091F9B4C5F005B495A /* Lottery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
 		52C2AE0B1F9B4DCC005B495A /* LotteryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryProvider.swift; sourceTree = "<group>"; };
+		52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryDetailsViewController.swift; sourceTree = "<group>"; };
 		52FE9FCB1F9B536C000F5012 /* LotteryWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryWebService.swift; sourceTree = "<group>"; };
 		52FE9FCD1F9B5409000F5012 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B968699C4DE7E29FA7385FAD /* Pods-Lottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottery/Pods-Lottery.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				52C2ADFB1F9B4749005B495A /* LaunchScreen.storyboard */,
 				52C2ADFE1F9B4749005B495A /* Info.plist */,
 				52C2AE091F9B4C5F005B495A /* Lottery.swift */,
+				52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -216,11 +219,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lottery/Pods-Lottery-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountdownLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +262,7 @@
 			files = (
 				52C2AE0C1F9B4DCC005B495A /* LotteryProvider.swift in Sources */,
 				52C2ADF51F9B4749005B495A /* LotteryTableViewController.swift in Sources */,
+				52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */,
 				52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */,
 				52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */,
 				52C2AE061F9B49B8005B495A /* LotteryTableViewDataSource.swift in Sources */,
