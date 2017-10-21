@@ -9,6 +9,7 @@ xcuserdata/
 build/
 DerivedData/
 Pods/
+Podfile.lock
 *.moved-aside
 *.pbxuser
 !default.pbxuser
