@@ -19,8 +19,8 @@ class LotteryDetailsViewController: UIViewController{
     }
 
     func startCountDown(){
-        countDownLabel.addTime(time: lottery.endDate!.timeIntervalSinceNow)
         countDownLabel.animationType = CountdownEffect.Evaporate
-        countDownLabel.start()
+        countDownLabel.setCountDownDate(targetDate: lottery.endDate! as NSDate)
+        countDownLabel.start()        
     }
 }

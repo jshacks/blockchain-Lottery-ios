@@ -42,5 +42,10 @@ class LotteryTableViewController: UIViewController {
             destination.lottery = lottery
         }
     }
+
+    @IBAction func logOut(_ sender: Any) {
+        
+    }
+
 }
 
