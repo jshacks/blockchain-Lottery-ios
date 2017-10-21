@@ -10,21 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Account View Controller-->
-        <scene sceneID="XZp-AL-HM7">
-            <objects>
-                <viewController id="KcS-MD-XeB" customClass="MyAccountViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rmi-xW-mZs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="hKT-Sx-otm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MgA-ex-iRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="476" y="-520"/>
-        </scene>
         <!--Lotteries-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -34,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSe-GJ-K8g">
-                                <rect key="frame" x="0.0" y="64" width="375" height="523"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lotteryCell" rowHeight="60" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
@@ -64,48 +49,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-Uz-fMa">
-                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvb-kn-g0q">
-                                        <rect key="frame" x="8" y="8" width="359" height="64"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Create new raffle">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="createNewLottery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UtQ-Wf-4Bl"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="507-BI-oUb"/>
-                                    <constraint firstAttribute="trailing" secondItem="Yvb-kn-g0q" secondAttribute="trailing" constant="8" id="7iu-Mo-P2w"/>
-                                    <constraint firstItem="Yvb-kn-g0q" firstAttribute="leading" secondItem="HSQ-Uz-fMa" secondAttribute="leading" constant="8" id="ECM-pB-Gxj"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yvb-kn-g0q" secondAttribute="bottom" constant="8" id="SFL-Tt-RPG"/>
-                                    <constraint firstItem="Yvb-kn-g0q" firstAttribute="top" secondItem="HSQ-Uz-fMa" secondAttribute="top" constant="8" id="uEI-q9-p4M"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="A0A-cn-fo6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pSe-GJ-K8g" secondAttribute="trailing" id="Syv-bh-dad"/>
+                            <constraint firstItem="pSe-GJ-K8g" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WPo-yu-Uzv"/>
                             <constraint firstItem="pSe-GJ-K8g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l7V-VD-MWI"/>
-                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nIh-lC-dco"/>
-                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pij-cc-SM1"/>
                             <constraint firstItem="pSe-GJ-K8g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tFJ-hB-XTX"/>
-                            <constraint firstItem="HSQ-Uz-fMa" firstAttribute="top" secondItem="pSe-GJ-K8g" secondAttribute="bottom" id="u9J-RS-vSA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lotteries" id="9Zb-zz-IyF">
-                        <barButtonItem key="leftBarButtonItem" title="Account" id="Ssp-OL-eex">
-                            <connections>
-                                <segue destination="KcS-MD-XeB" kind="show" identifier="showMyAccount" id="Hla-ay-8kT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Account" id="Ssp-OL-eex"/>
                         <barButtonItem key="rightBarButtonItem" title="Log out" id="qYL-0p-dwd">
                             <connections>
                                 <action selector="logOut:" destination="BYZ-38-t0r" id="jkV-9T-jv6"/>
@@ -114,9 +69,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="lotteryTableView" destination="pSe-GJ-K8g" id="ROf-lP-Otx"/>
-                        <outlet property="newRaffleButton" destination="Yvb-kn-g0q" id="Yxc-kh-hjW"/>
                         <segue destination="bV0-Dd-7Qq" kind="show" identifier="presentLottery" id="Scz-oW-bzH"/>
-                        <segue destination="0R9-SI-KhE" kind="show" identifier="newLottery" id="6fG-To-vbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -225,21 +178,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7V-PG-QKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1309.5999999999999" y="133.5832083958021"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="571-eS-d7t">
-            <objects>
-                <viewController id="0R9-SI-KhE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tea-9b-3hl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="eID-dC-SqN"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nPY-hl-clQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="794" y="842"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nEC-Bv-Ub4">

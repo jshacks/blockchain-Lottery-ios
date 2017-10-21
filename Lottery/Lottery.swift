@@ -12,11 +12,13 @@ class Lottery: Codable{
     let name: String?
     let address: String?
     var history: [LotteryExtraction]?
+    var numberOfParticipantsRequired: Int?
 
-    init(name: String, address: String?, history: [LotteryExtraction]?){
+    init(name: String, address: String?, history: [LotteryExtraction]?, numberOfParticipantsRequired: Int?){
         self.name = name
         self.address = address
         self.history = history
+        self.numberOfParticipantsRequired = numberOfParticipantsRequired
     }
 }
 
