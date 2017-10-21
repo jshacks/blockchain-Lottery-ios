@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,29 +23,59 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lotteryCell" rowHeight="60" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lotteryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lotteryCell" rowHeight="140" id="Vpk-qS-sN9" customClass="LotterListCell" customModule="Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vpk-qS-sN9" id="WCq-pS-hjp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwS-jS-WPu">
-                                                    <rect key="frame" x="8" y="8" width="359" height="43.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ile-1K-mTg">
+                                                    <rect key="frame" x="24" y="41" width="216.5" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="181.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-hr-yPO">
+                                                            <rect key="frame" x="185.5" y="0.0" width="31" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-Ja-7wB">
+                                                    <rect key="frame" x="24" y="77" width="212" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-q5-gLz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="148" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-a8-oEr">
+                                                            <rect key="frame" x="152" y="0.0" width="60" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="DwS-jS-WPu" secondAttribute="bottom" constant="8" id="QaB-Vd-L64"/>
-                                                <constraint firstItem="DwS-jS-WPu" firstAttribute="top" secondItem="WCq-pS-hjp" secondAttribute="top" constant="8" id="d4B-CI-QdQ"/>
-                                                <constraint firstItem="DwS-jS-WPu" firstAttribute="leading" secondItem="WCq-pS-hjp" secondAttribute="leading" constant="8" id="e8d-cn-cWz"/>
-                                                <constraint firstAttribute="trailing" secondItem="DwS-jS-WPu" secondAttribute="trailing" constant="8" id="uKd-L6-sFt"/>
+                                                <constraint firstItem="ile-1K-mTg" firstAttribute="top" secondItem="WCq-pS-hjp" secondAttribute="topMargin" constant="33" id="6lj-D0-YtW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kZ2-Ja-7wB" secondAttribute="bottom" constant="34" id="Cqi-Dc-Y39"/>
+                                                <constraint firstItem="ile-1K-mTg" firstAttribute="leading" secondItem="WCq-pS-hjp" secondAttribute="leadingMargin" constant="16" id="D6S-wO-Vas"/>
+                                                <constraint firstItem="kZ2-Ja-7wB" firstAttribute="leading" secondItem="ile-1K-mTg" secondAttribute="leading" id="nWH-xR-4IB"/>
+                                                <constraint firstItem="kZ2-Ja-7wB" firstAttribute="top" secondItem="ile-1K-mTg" secondAttribute="bottom" constant="16" id="tLc-eU-gs7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nameLabel" destination="DwS-jS-WPu" id="HhM-RD-0mN"/>
+                                            <outlet property="numberOfParticipantsLabel" destination="6nc-hr-yPO" id="jv0-jT-RkG"/>
+                                            <outlet property="winningsLabel" destination="Ddw-a8-oEr" id="uKm-P9-9Dc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

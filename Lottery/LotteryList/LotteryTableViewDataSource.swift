@@ -10,8 +10,14 @@ import UIKit
 import RxSwift
 
 class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
-    var lottery: Lottery?
-    var lotteryProvider: LotteryProvider?
+    var lottery: Lottery? = Lottery(name: "Cea mai loterie",
+                                    address: "someWallet",
+                                    history:
+                                        [LotteryExtraction(participants: ["sdaw", "dsad"], state: .running, date: nil),
+                                         LotteryExtraction(participants: ["sdaw", "dsad"], state: .finished, date: Date())],
+                                    numberOfParticipantsRequired: 15)
+    var runningExtractions: [LotteryExtraction] = []
+    var finishedExtractions: [LotteryExtraction] = []
     weak var tableView: UITableView?
     var disposeBag = DisposeBag()
 
@@ -19,8 +25,19 @@ class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
         super.init()
         self.tableView = tableView
         tableView.dataSource = self
-        self.lotteryProvider = LotteryProvider()
-//        lotteryProvider?.lotteries.asObservable().subscribe(lotteriesDidChange).disposed(by: disposeBag)
+        self.runningExtractions = self.lottery?.history?.filter({$0.state == .running}) ?? []
+        self.finishedExtractions = self.lottery?.history?.filter({$0.state == .finished}) ?? []
+
+        //        sync()
+    }
+
+    func sync(){
+        LottteryWebService().getAllLotteries(callback: { response in
+            self.lottery = response
+            self.runningExtractions = self.lottery?.history?.filter({$0.state == .running}) ?? []
+            self.finishedExtractions = self.lottery?.history?.filter({$0.state == .finished}) ?? []
+            self.tableView?.reloadData()
+        })
     }
 
     func lotteriesDidChange(_ event: Event<Lottery>){
@@ -34,14 +51,17 @@ class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return 1
+            return runningExtractions.count
+        }else{
+            return finishedExtractions.count
         }
-        return lottery?.history?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lotteryCell") as? LotterListCell
-//        cell?.nameLabel.text = lotteries[indexPath.row].name
+        let extraction = indexPath.section == 0 ? runningExtractions[indexPath.row] : finishedExtractions[indexPath.row]
+        cell?.numberOfParticipantsLabel.text = "\(extraction.participants?.count ?? 0) of \(lottery?.numberOfParticipantsRequired ?? 0)"
+        cell?.winningsLabel.text = "$99999"
         return cell ?? UITableViewCell()
     }
 }

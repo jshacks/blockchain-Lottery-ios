@@ -30,9 +30,11 @@ class LotteryExtraction: Codable{
 
     var participants: [String]?
     var state: ExtractionState?
+    var date: Date?
 
-    init(participants: [String]?, state: ExtractionState?) {
+    init(participants: [String]?, state: ExtractionState?, date: Date?) {
         self.participants = participants
         self.state = state
+        self.date = date
     }
 }

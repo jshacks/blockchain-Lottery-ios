@@ -12,7 +12,6 @@ import RxSwift
 
 class LotteryTableViewController: UIViewController {
     @IBOutlet weak var lotteryTableView: UITableView!
-    @IBOutlet weak var newRaffleButton: UIButton!
     var dataSource: LotteryTableViewDataSource!
     var disposeBag = DisposeBag()
 
@@ -24,13 +23,10 @@ class LotteryTableViewController: UIViewController {
 
     func didSelectItem(_ event: Event<IndexPath>){
         guard let index = event.element else {return}
-        let lottery = dataSource.lottery?.history?[index.row]
+        if index.section == 0 {
+            UIPasteboard.general.string = dataSource.lottery?.address
+        }
         lotteryTableView.deselectRow(at: index, animated: true)
-        performSegue(withIdentifier: "presentLottery", sender: lottery)
-    }
-
-    @IBAction func createNewLottery(_ sender: Any) {
-        performSegue(withIdentifier: "newLottery", sender: self)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,10 +37,6 @@ class LotteryTableViewController: UIViewController {
             segue.identifier == "presentLottery"{
             destination.extraction = lotteryExtraction
         }
-    }
-
-    @IBAction func logOut(_ sender: Any) {
-        
     }
 
 }

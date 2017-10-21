@@ -16,7 +16,6 @@
 		52C2AE061F9B49B8005B495A /* LotteryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE051F9B49B8005B495A /* LotteryTableViewDataSource.swift */; };
 		52C2AE081F9B4AA1005B495A /* LotteryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE071F9B4AA1005B495A /* LotteryListCell.swift */; };
 		52C2AE0A1F9B4C5F005B495A /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE091F9B4C5F005B495A /* Lottery.swift */; };
-		52C2AE0C1F9B4DCC005B495A /* LotteryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C2AE0B1F9B4DCC005B495A /* LotteryProvider.swift */; };
 		52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */; };
 		52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9FCB1F9B536C000F5012 /* LotteryWebService.swift */; };
 		52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9FCD1F9B5409000F5012 /* WebService.swift */; };
@@ -55,7 +54,6 @@
 		52C2AE051F9B49B8005B495A /* LotteryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTableViewDataSource.swift; sourceTree = "<group>"; };
 		52C2AE071F9B4AA1005B495A /* LotteryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryListCell.swift; sourceTree = "<group>"; };
 		52C2AE091F9B4C5F005B495A /* Lottery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
-		52C2AE0B1F9B4DCC005B495A /* LotteryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryProvider.swift; sourceTree = "<group>"; };
 		52E58D971F9B58A30067B39E /* LotteryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryDetailsViewController.swift; sourceTree = "<group>"; };
 		52FE9FCB1F9B536C000F5012 /* LotteryWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryWebService.swift; sourceTree = "<group>"; };
 		52FE9FCD1F9B5409000F5012 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				BB3A85D31F9B5751009691E7 /* LotteryTableViewController.swift */,
 				52C2AE051F9B49B8005B495A /* LotteryTableViewDataSource.swift */,
 				52C2AE071F9B4AA1005B495A /* LotteryListCell.swift */,
-				52C2AE0B1F9B4DCC005B495A /* LotteryProvider.swift */,
 			);
 			path = LotteryList;
 			sourceTree = "<group>";
@@ -356,7 +353,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C2AE0C1F9B4DCC005B495A /* LotteryProvider.swift in Sources */,
 				52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */,
 				52A007321F9B6AE600FED649 /* MyAccountViewController.swift in Sources */,
 				52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */,
