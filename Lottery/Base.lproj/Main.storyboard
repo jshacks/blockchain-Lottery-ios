@@ -42,49 +42,46 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ile-1K-mTg">
-                                                    <rect key="frame" x="24" y="25" width="98" height="20.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-Ja-7wB">
+                                                    <rect key="frame" x="24" y="68.5" width="145.5" height="23"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Winner:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="64" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-q5-gLz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="23"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-hr-yPO">
-                                                            <rect key="frame" x="68" y="0.0" width="30" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-a8-oEr">
+                                                            <rect key="frame" x="86" y="0.0" width="59.5" height="23"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-Ja-7wB">
-                                                    <rect key="frame" x="24" y="61.5" width="145.5" height="19.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-q5-gLz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="19.5"/>
-                                                            <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-a8-oEr">
-                                                            <rect key="frame" x="86" y="0.0" width="59.5" height="19.5"/>
-                                                            <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
+                                                    <rect key="frame" x="24" y="8" width="64" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="283" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-hr-yPO">
+                                                    <rect key="frame" x="24" y="36" width="30" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ile-1K-mTg" secondAttribute="trailing" constant="8" id="7Is-sD-aUp"/>
-                                                <constraint firstItem="ile-1K-mTg" firstAttribute="top" secondItem="WCq-pS-hjp" secondAttribute="topMargin" constant="17" id="9xc-7U-9wq"/>
-                                                <constraint firstItem="ile-1K-mTg" firstAttribute="leading" secondItem="WCq-pS-hjp" secondAttribute="leadingMargin" constant="16" id="D6S-wO-Vas"/>
-                                                <constraint firstItem="kZ2-Ja-7wB" firstAttribute="leading" secondItem="ile-1K-mTg" secondAttribute="leading" id="nWH-xR-4IB"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kZ2-Ja-7wB" secondAttribute="bottom" constant="18" id="ozY-3W-NZf"/>
-                                                <constraint firstItem="kZ2-Ja-7wB" firstAttribute="top" secondItem="ile-1K-mTg" secondAttribute="bottom" constant="16" id="tLc-eU-gs7"/>
+                                                <constraint firstItem="Lkz-RF-ucC" firstAttribute="top" secondItem="WCq-pS-hjp" secondAttribute="top" constant="8" id="ELd-qR-oWo"/>
+                                                <constraint firstItem="kZ2-Ja-7wB" firstAttribute="top" secondItem="6nc-hr-yPO" secondAttribute="bottom" constant="12" id="HcX-wi-uJv"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6nc-hr-yPO" secondAttribute="trailing" constant="24" id="JQf-uv-wl9"/>
+                                                <constraint firstItem="6nc-hr-yPO" firstAttribute="top" secondItem="Lkz-RF-ucC" secondAttribute="bottom" constant="7.5" id="Rm4-3z-bRX"/>
+                                                <constraint firstItem="Lkz-RF-ucC" firstAttribute="leading" secondItem="WCq-pS-hjp" secondAttribute="leading" constant="24" id="VHd-KS-TdW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kZ2-Ja-7wB" secondAttribute="bottom" constant="8" id="ozY-3W-NZf"/>
+                                                <constraint firstItem="kZ2-Ja-7wB" firstAttribute="leading" secondItem="6nc-hr-yPO" secondAttribute="leading" id="rfp-eq-fw3"/>
+                                                <constraint firstItem="6nc-hr-yPO" firstAttribute="leading" secondItem="Lkz-RF-ucC" secondAttribute="leading" id="t0T-yO-Ikg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12766814231872559" green="0.17564254999160767" blue="0.22556990385055542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
