@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		524E2EE91F9C81CF0087397F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E2EE81F9C81CF0087397F /* CustomTabBarController.swift */; };
 		524E2EEB1F9C96710087397F /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E2EEA1F9C96710087397F /* aboutVC.swift */; };
+		524E2EED1F9CA22E0087397F /* FaqVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E2EEC1F9CA22E0087397F /* FaqVC.swift */; };
 		52A007341F9B70B600FED649 /* ParticleEffectsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */; };
 		52A007401F9BA5A800FED649 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A007361F9BA5A200FED649 /* Lato-HairlineItalic.ttf */; };
 		52A007411F9BA5A800FED649 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A007371F9BA5A300FED649 /* Lato-Hairline.ttf */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		524E2EE81F9C81CF0087397F /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		524E2EEA1F9C96710087397F /* aboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
+		524E2EEC1F9CA22E0087397F /* FaqVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqVC.swift; sourceTree = "<group>"; };
 		52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEffectsExtension.swift; sourceTree = "<group>"; };
 		52A007361F9BA5A200FED649 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
 		52A007371F9BA5A300FED649 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				52A0074A1F9BC7DE00FED649 /* CustomNavigationController.swift */,
 				524E2EE81F9C81CF0087397F /* CustomTabBarController.swift */,
 				524E2EEA1F9C96710087397F /* aboutVC.swift */,
+				524E2EEC1F9CA22E0087397F /* FaqVC.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E58D981F9B58A30067B39E /* LotteryDetailsViewController.swift in Sources */,
+				524E2EED1F9CA22E0087397F /* FaqVC.swift in Sources */,
 				52FE9FCE1F9B5409000F5012 /* WebService.swift in Sources */,
 				524E2EE91F9C81CF0087397F /* CustomTabBarController.swift in Sources */,
 				52FE9FCC1F9B536C000F5012 /* LotteryWebService.swift in Sources */,
