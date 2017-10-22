@@ -42,16 +42,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ile-1K-mTg">
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ile-1K-mTg">
                                                     <rect key="frame" x="24" y="25" width="219" height="20.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
                                                             <rect key="frame" x="0.0" y="0.0" width="185" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-hr-yPO">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-hr-yPO">
                                                             <rect key="frame" x="189" y="0.0" width="30" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,17 +59,17 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-Ja-7wB">
-                                                    <rect key="frame" x="24" y="61" width="213" height="20.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-Ja-7wB">
+                                                    <rect key="frame" x="24" y="61.5" width="213" height="19.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-q5-gLz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="149.5" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Possible Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-q5-gLz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="149.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-a8-oEr">
-                                                            <rect key="frame" x="153.5" y="0.0" width="59.5" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-a8-oEr">
+                                                            <rect key="frame" x="153.5" y="0.0" width="59.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -161,7 +161,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-Rt-puu">
-                                <rect key="frame" x="16" y="548.5" width="278" height="25.5"/>
+                                <rect key="frame" x="16" y="458" width="277" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-oB-SLB">
                                         <rect key="frame" x="0.0" y="0.0" width="184.5" height="25.5"/>
@@ -170,7 +170,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGD-Sf-LQ0">
-                                        <rect key="frame" x="188.5" y="0.0" width="89.5" height="25.5"/>
+                                        <rect key="frame" x="188.5" y="0.0" width="88.5" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -181,7 +181,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uik-Rq-uCS">
-                                <rect key="frame" x="16" y="590" width="344" height="25.5"/>
+                                <rect key="frame" x="16" y="499.5" width="343" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-7f-fvH">
                                         <rect key="frame" x="0.0" y="0.0" width="228.5" height="25.5"/>
@@ -190,7 +190,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hJ-TT-xgu">
-                                        <rect key="frame" x="232.5" y="0.0" width="111.5" height="25.5"/>
+                                        <rect key="frame" x="232.5" y="0.0" width="110.5" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -201,21 +201,22 @@
                                 </constraints>
                             </stackView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-M6-AkS">
-                                <rect key="frame" x="37.5" y="132" width="300" height="300"/>
+                                <rect key="frame" x="83" y="132" width="209.5" height="209.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cFn-M6-AkS" secondAttribute="height" multiplier="1:1" id="0BC-EN-Reg"/>
-                                    <constraint firstAttribute="height" constant="300" id="Ad8-Us-Eyt"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="Ad8-Us-Eyt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="bJx-kZ-cEe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address: \\some_random_hash" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-fp-yoK">
-                                <rect key="frame" x="37.5" y="440" width="300.5" height="19.5"/>
+                                <rect key="frame" x="83" y="349.5" width="210" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="0.64937279929577463" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the qr code to copy the address to clipboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-6p-lEI">
-                                <rect key="frame" x="37" y="467.5" width="301" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" text="Tap the qr code to copy the address to clipboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-6p-lEI">
+                                <rect key="frame" x="16" y="377" width="343" height="17"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="0.64937279930000003" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -224,20 +225,21 @@
                         <color key="backgroundColor" red="0.12941176470588234" green="0.1764705882352941" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="centerX" secondItem="uUT-Ok-QdB" secondAttribute="centerX" id="7XH-qf-h7f"/>
-                            <constraint firstItem="w5C-Rt-puu" firstAttribute="top" secondItem="hs6-6p-lEI" secondAttribute="bottom" constant="64" id="EKp-yw-PJw"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="centerX" secondItem="cFn-M6-AkS" secondAttribute="centerX" id="IlN-fN-ymI"/>
                             <constraint firstItem="w5C-Rt-puu" firstAttribute="leading" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="TUk-Q8-W9I"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="top" secondItem="cFn-M6-AkS" secondAttribute="bottom" constant="8" id="U08-1F-p0v"/>
-                            <constraint firstItem="hs6-6p-lEI" firstAttribute="trailing" secondItem="dbD-fp-yoK" secondAttribute="trailing" id="UC1-mA-Ukb"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="trailing" secondItem="cFn-M6-AkS" secondAttribute="trailing" id="VJM-Jh-VtN"/>
                             <constraint firstItem="uik-Rq-uCS" firstAttribute="leading" secondItem="w5C-Rt-puu" secondAttribute="leading" id="XwC-h4-mgM"/>
+                            <constraint firstItem="3Uk-hh-yZj" firstAttribute="trailing" secondItem="hs6-6p-lEI" secondAttribute="trailing" constant="16" id="eRM-SZ-Of3"/>
                             <constraint firstItem="hs6-6p-lEI" firstAttribute="top" secondItem="dbD-fp-yoK" secondAttribute="bottom" constant="8" id="fWN-Hl-l7s"/>
-                            <constraint firstItem="hs6-6p-lEI" firstAttribute="leading" secondItem="dbD-fp-yoK" secondAttribute="leading" id="jHG-gA-VH1"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="leading" secondItem="cFn-M6-AkS" secondAttribute="leading" id="jkn-Tg-7Ca"/>
+                            <constraint firstItem="3Uk-hh-yZj" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uik-Rq-uCS" secondAttribute="bottom" constant="27.5" id="kqG-Nt-PQy"/>
                             <constraint firstItem="uik-Rq-uCS" firstAttribute="top" secondItem="w5C-Rt-puu" secondAttribute="bottom" constant="16" id="ksl-VD-qmV"/>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="pTw-RS-uTl"/>
+                            <constraint firstItem="w5C-Rt-puu" firstAttribute="top" secondItem="hs6-6p-lEI" secondAttribute="bottom" constant="64" id="vKY-vc-xFD"/>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="top" secondItem="3Uk-hh-yZj" secondAttribute="top" constant="16" id="wSP-O1-4jJ"/>
                             <constraint firstItem="3Uk-hh-yZj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cFn-M6-AkS" secondAttribute="trailing" constant="16" id="xXH-hh-WSf"/>
+                            <constraint firstItem="hs6-6p-lEI" firstAttribute="leading" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="zO7-VS-wbI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Uk-hh-yZj"/>
                     </view>
@@ -249,6 +251,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addressLabel" destination="dbD-fp-yoK" id="YPu-LU-7kP"/>
                         <outlet property="codeImageView" destination="cFn-M6-AkS" id="cbO-Nx-KQf"/>
                     </connections>
                 </viewController>
@@ -293,6 +296,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eYi-rz-eLq" customClass="CustomTabBarController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8qx-p7-WaN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -582,9 +586,9 @@ You can win various prizes, ranging from money to cool experiences
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRf-Rt-q2e">
                                                 <rect key="frame" x="16" y="838" width="343" height="235.5"/>
-                                                <mutableString key="text">It all starts with awareness: identify problems and find their root causes. Next, throw in some design thinking and impact projections, mixed with innovative approaches, experimentation, and agile implementation. Of course, the more of us, the merrier.
+                                                <string key="text">It all starts with awareness: identify problems and find their root causes. Next, throw in some design thinking and impact projections, mixed with innovative approaches, experimentation, and agile implementation. Of course, the more of us, the merrier.
 
-Lucky9 supports NGOs with bold visions, extensive know-how, and proven track record of successful projects. We enable them to raise the funds needed to heal our planet and create a sustainable future.  Our lottery participants find themselves in a sweet spot: everybody who bought a ticket wins (either prizes, either a better world).</mutableString>
+Lucky9 supports NGOs with bold visions, extensive know-how, and proven track record of successful projects. We enable them to raise the funds needed to heal our planet and create a sustainable future.  Our lottery participants find themselves in a sweet spot: everybody who bought a ticket wins (either prizes, either a better world).</string>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -658,7 +662,7 @@ Lucky9 supports NGOs with bold visions, extensive know-how, and proven track rec
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1br-fG-NWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-937" y="856"/>
+            <point key="canvasLocation" x="-902" y="1045"/>
         </scene>
     </scenes>
     <resources>
