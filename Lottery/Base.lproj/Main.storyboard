@@ -43,16 +43,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ile-1K-mTg">
-                                                    <rect key="frame" x="24" y="25" width="219" height="20.5"/>
+                                                    <rect key="frame" x="24" y="25" width="98" height="20.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="185" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Winner:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-RF-ucC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="64" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-hr-yPO">
-                                                            <rect key="frame" x="189" y="0.0" width="30" height="20.5"/>
+                                                            <rect key="frame" x="68" y="0.0" width="30" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -79,6 +79,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ile-1K-mTg" secondAttribute="trailing" constant="8" id="7Is-sD-aUp"/>
                                                 <constraint firstItem="ile-1K-mTg" firstAttribute="top" secondItem="WCq-pS-hjp" secondAttribute="topMargin" constant="17" id="9xc-7U-9wq"/>
                                                 <constraint firstItem="ile-1K-mTg" firstAttribute="leading" secondItem="WCq-pS-hjp" secondAttribute="leadingMargin" constant="16" id="D6S-wO-Vas"/>
                                                 <constraint firstItem="kZ2-Ja-7wB" firstAttribute="leading" secondItem="ile-1K-mTg" secondAttribute="leading" id="nWH-xR-4IB"/>
@@ -424,7 +425,7 @@ The money raised through selling lottery tickets will be used to pay prizes and 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a lottery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wP-DJ-dlz">
-                                                <rect key="frame" x="118" y="1039.5" width="241" height="41"/>
+                                                <rect key="frame" x="118" y="1039.5" width="241" height="42"/>
                                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>

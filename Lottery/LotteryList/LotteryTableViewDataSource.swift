@@ -67,8 +67,10 @@ class LotteryTableViewDataSource: NSObject, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lotteryCell") as? LotterListCell
-        let extraction = indexPath.section == 0 ? runningExtractions[indexPath.row] : finishedExtractions[indexPath.row]
-        cell?.numberOfParticipantsLabel.text = "\(extraction.participants?.count ?? 0) of \(lottery?.numberOfParticipantsRequired ?? 0)"
+        let random = arc4random_uniform(10)
+        let second = arc4random_uniform(25)
+        let string = "0x1\(10 + second)f681646d4a755815f9cb19e1acc8\(random)65a0c\(random)ac"
+        cell?.numberOfParticipantsLabel.text = string
         let rand = arc4random_uniform(170)
         let rand2 = arc4random_uniform(2)
         if rand2 > 0{
