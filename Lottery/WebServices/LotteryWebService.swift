@@ -17,4 +17,10 @@ class LottteryWebService: WebService{
             callback(try! JSONDecoder().decode(Lottery.self, from: responseData))
         })
     }
+
+    func getNumberOfParticipants(callback: @escaping(Int)->Void){
+        Alamofire.request("http://138.68.105.52:8080/participantsCount", method: .get).response { response in
+            callback(Int(String(data: response.data!, encoding: .utf8)!)!)            
+        }
+    }
 }

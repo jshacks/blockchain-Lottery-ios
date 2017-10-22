@@ -181,7 +181,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uik-Rq-uCS">
-                                <rect key="frame" x="16" y="471.5" width="191" height="25.5"/>
+                                <rect key="frame" x="16" y="471.5" width="178.5" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tickets left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-7f-fvH">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="25.5"/>
@@ -189,8 +189,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 of 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hJ-TT-xgu">
-                                        <rect key="frame" x="114" y="0.0" width="77" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 of 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hJ-TT-xgu">
+                                        <rect key="frame" x="114" y="0.0" width="64.5" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
                                         <color key="textColor" red="0.1764705882352941" green="0.99607843137254903" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -219,7 +219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="udW-jo-Ny4">
-                                <rect key="frame" x="16" y="505" width="201" height="25.5"/>
+                                <rect key="frame" x="16" y="505" width="189" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Prize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-6U-cZq">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="25.5"/>
@@ -227,8 +227,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 ETH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHd-YX-5bp">
-                                        <rect key="frame" x="132" y="0.0" width="69" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ETH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHd-YX-5bp">
+                                        <rect key="frame" x="132" y="0.0" width="57" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
                                         <color key="textColor" red="0.1764705882" green="0.99607843139999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -269,6 +269,8 @@
                     <connections>
                         <outlet property="addressLabel" destination="dbD-fp-yoK" id="YPu-LU-7kP"/>
                         <outlet property="codeImageView" destination="cFn-M6-AkS" id="cbO-Nx-KQf"/>
+                        <outlet property="nrParticipants" destination="5hJ-TT-xgu" id="0FF-7o-NKr"/>
+                        <outlet property="prize" destination="WHd-YX-5bp" id="WnC-kD-viA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7V-PG-QKk" userLabel="First Responder" sceneMemberID="firstResponder"/>

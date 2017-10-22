@@ -50,14 +50,14 @@ extension UIViewController{
         }
     }
 
-    func particlesAt(position: CGPoint){
+    func particlesAt(position: CGPoint) -> CAEmitterLayer{
         let emitter = CAEmitterLayer()
         emitter.emitterPosition = position
-        emitter.emitterShape = kCAEmitterLayerVolume
+        emitter.emitterShape = kCAEmitterLayerLine
         emitter.emitterSize = CGSize(width: self.view.frame.size.width, height: 2.0)
         emitter.emitterCells = generateEmitterCells()
-
         self.view.layer.addSublayer(emitter)
+        return emitter
     }
 
     private func generateEmitterCells() -> [CAEmitterCell] {
@@ -69,7 +69,7 @@ extension UIViewController{
             cell.lifetimeRange = 0
             cell.velocity = CGFloat(velocities[Int(arc4random_uniform(4))])
             cell.velocityRange = 0
-            cell.emissionLongitude = CGFloat(Double.pi / 2)
+            cell.emissionLongitude = CGFloat(Double.pi)
             cell.emissionRange = 0.5
             cell.spin = 3.5
             cell.spinRange = 0

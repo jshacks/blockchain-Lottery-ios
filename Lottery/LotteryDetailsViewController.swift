@@ -20,13 +20,40 @@ class LotteryDetailsViewController: UIViewController{
     var didLongPressBool = false
     @IBOutlet weak var codeImageView: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
-
+    @IBOutlet weak var nrParticipants: UILabel!
+    @IBOutlet weak var prize: UILabel!
+    var timer: Timer!
     var isShowingToast = false
+    var didShow = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         addQR()
         addTapToCopy()
         addressLabel.text = "address: \(lottery?.address ?? "")"
+
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: getParticipants(_:))
+        timer.fire()        
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        didShow = true
+    }
+    var emitter:CAEmitterLayer?
+
+    func getParticipants(_ timer: Timer){
+        LottteryWebService().getNumberOfParticipants(callback: { (participants) in
+            if self.didShow && participants == 0 && self.emitter == nil{
+                 self.emitter = self.particlesAt(position: CGPoint(x: self.view.frame.midX, y: self.view.frame.midY))
+            }
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { _ in
+                self.emitter?.removeFromSuperlayer()
+                self.emitter = nil
+            })
+            self.nrParticipants.text = "\(participants) of 10"
+            self.prize.text = "\(participants) ETH"
+        })
     }
 
     func addQR(){
@@ -37,7 +64,7 @@ class LotteryDetailsViewController: UIViewController{
     }
 
     func addTapToCopy(){
-       let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didLongPress))
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didLongPress))
         codeImageView.addGestureRecognizer(tapRecognizer)
 
     }
