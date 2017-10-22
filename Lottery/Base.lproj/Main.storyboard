@@ -15,6 +15,9 @@
         <array key="Lato-Black.ttf">
             <string>Lato-Black</string>
         </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
         </array>
@@ -309,20 +312,189 @@
         <!--About-->
         <scene sceneID="aiH-fd-4pe">
             <objects>
-                <viewController id="57F-rV-g9b" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eGD-Ta-zRc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.12941176470588234" green="0.1764705882352941" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="e1N-nm-6v5"/>
+                <viewController id="57F-rV-g9b" customClass="AboutVC" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CO1-Sh-voC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1751"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3E-bg-KtF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1731"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9u-pz-ZKP">
+                                        <rect key="frame" x="0.0" y="-10" width="375" height="1751"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We bet we can save the world" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6Q-1B-WGz">
+                                                <rect key="frame" x="16" y="48" width="343" height="110.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110.5" id="Ybp-Op-9kS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="46"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWy-tA-g4U">
+                                                <rect key="frame" x="16" y="182.5" width="343" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="GEc-AG-6VA"/>
+                                                </constraints>
+                                                <string key="text">Lucky9 is a lottery system on the blockchain. 
+
+Anybody has the chance to win prizes and, at the same time, make our world a better place.</string>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saveWorld" translatesAutoresizingMaskIntoConstraints="NO" id="Tgj-LL-Acw">
+                                                <rect key="frame" x="16" y="374.5" width="47" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="4bd-1v-PKu"/>
+                                                    <constraint firstAttribute="width" secondItem="Tgj-LL-Acw" secondAttribute="height" multiplier="46:81" id="VV0-nJ-JxK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a positive impact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWv-Ay-Rfi">
+                                                <rect key="frame" x="79" y="374.5" width="280" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="vl3-kp-gKX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wP-6l-AzQ">
+                                                <rect key="frame" x="16" y="483" width="343" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="Qri-Qp-Lik"/>
+                                                </constraints>
+                                                <string key="text">We’re gambling with our planet’s future with every bad choice we make that has a negative impact on the environment and the majority of us don’t even realize it. 
+
+We’re here to change that.</string>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="organizeLottery" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-3i-QnR">
+                                                <rect key="frame" x="236.5" y="675" width="122.5" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3BX-3i-QnR" secondAttribute="height" multiplier="353:242" id="NZp-4s-gvV"/>
+                                                    <constraint firstAttribute="height" constant="84" id="ncY-Wg-kRU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organize a lottery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqV-iN-sxI">
+                                                <rect key="frame" x="16" y="675" width="204.5" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="z8B-F0-Hcg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDe-6U-QHM">
+                                                <rect key="frame" x="16" y="783" width="343" height="194.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="194.5" id="dds-D9-KpM"/>
+                                                </constraints>
+                                                <string key="text">Any NGO can design a lottery for fundraising purposes, 
+using our lottery generator. 
+
+You just have to choose some parameters and you’re ready to go.
+The money raised through selling lottery tickets will be used to pay prizes and to fund a certain NGO project.</string>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a lottery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wP-DJ-dlz">
+                                                <rect key="frame" x="118" y="1039.5" width="241" height="41"/>
+                                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodLuck" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-Xe-Z3k">
+                                                <rect key="frame" x="16" y="1039.5" width="86" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="2Cm-yb-cTK"/>
+                                                    <constraint firstAttribute="width" secondItem="5Mz-Xe-Z3k" secondAttribute="height" multiplier="83:81" id="ee1-nS-Lfx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrR-vU-r6N">
+                                                <rect key="frame" x="16" y="1147.5" width="343" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="RJC-PI-OL5"/>
+                                                </constraints>
+                                                <string key="text">Anybody can buy tickets to enter lotteries running on our platform. 
+
+You can win various prizes, ranging from money to cool experiences 
+(a dinner with Simona Halep, for example).</string>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.12941176469999999" green="0.1764705882" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="b6Q-1B-WGz" firstAttribute="top" secondItem="1o9-VI-RCF" secondAttribute="top" constant="48" id="0mZ-Ix-qr0"/>
+                                            <constraint firstItem="GrR-vU-r6N" firstAttribute="top" secondItem="5Mz-Xe-Z3k" secondAttribute="bottom" constant="24" id="265-7c-gX6"/>
+                                            <constraint firstItem="1o9-VI-RCF" firstAttribute="trailing" secondItem="3BX-3i-QnR" secondAttribute="trailing" constant="16" id="4dn-4e-Syt"/>
+                                            <constraint firstAttribute="trailing" secondItem="7wP-DJ-dlz" secondAttribute="trailing" constant="16" id="5XJ-FZ-Dak"/>
+                                            <constraint firstItem="7wP-DJ-dlz" firstAttribute="leading" secondItem="5Mz-Xe-Z3k" secondAttribute="trailing" constant="16" id="8Am-GS-iLk"/>
+                                            <constraint firstAttribute="trailing" secondItem="b6Q-1B-WGz" secondAttribute="trailing" constant="16" id="9IY-Rn-K0Y"/>
+                                            <constraint firstItem="Tgj-LL-Acw" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="CqA-xe-ANs"/>
+                                            <constraint firstItem="GrR-vU-r6N" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="GAZ-q2-d2e"/>
+                                            <constraint firstItem="3BX-3i-QnR" firstAttribute="top" secondItem="4wP-6l-AzQ" secondAttribute="bottom" constant="62" id="GlX-Qc-IMB"/>
+                                            <constraint firstItem="7wP-DJ-dlz" firstAttribute="top" secondItem="5Mz-Xe-Z3k" secondAttribute="top" id="Iih-hk-fGL"/>
+                                            <constraint firstItem="3BX-3i-QnR" firstAttribute="leading" secondItem="xqV-iN-sxI" secondAttribute="trailing" constant="16" id="J5V-os-Bjn"/>
+                                            <constraint firstItem="xqV-iN-sxI" firstAttribute="top" secondItem="3BX-3i-QnR" secondAttribute="top" id="Jg7-rA-WhA"/>
+                                            <constraint firstItem="4wP-6l-AzQ" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="JgX-sU-GVS"/>
+                                            <constraint firstItem="1o9-VI-RCF" firstAttribute="trailing" secondItem="4wP-6l-AzQ" secondAttribute="trailing" constant="16" id="MXA-St-5XT"/>
+                                            <constraint firstItem="MDe-6U-QHM" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="NGk-0Z-0y0"/>
+                                            <constraint firstItem="Tgj-LL-Acw" firstAttribute="top" secondItem="VWy-tA-g4U" secondAttribute="bottom" constant="62" id="WBJ-NY-FUj"/>
+                                            <constraint firstItem="VWy-tA-g4U" firstAttribute="top" secondItem="b6Q-1B-WGz" secondAttribute="bottom" constant="24" id="a7S-3h-nDM"/>
+                                            <constraint firstItem="1o9-VI-RCF" firstAttribute="trailing" secondItem="GrR-vU-r6N" secondAttribute="trailing" constant="16" id="hSO-Jf-Y22"/>
+                                            <constraint firstItem="1o9-VI-RCF" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GrR-vU-r6N" secondAttribute="bottom" constant="36" id="hbz-NB-0YK"/>
+                                            <constraint firstItem="b6Q-1B-WGz" firstAttribute="leading" secondItem="A9u-pz-ZKP" secondAttribute="leading" constant="16" id="huZ-HF-Nla"/>
+                                            <constraint firstItem="MDe-6U-QHM" firstAttribute="top" secondItem="3BX-3i-QnR" secondAttribute="bottom" constant="24" id="nkf-VZ-Fga"/>
+                                            <constraint firstItem="1o9-VI-RCF" firstAttribute="trailing" secondItem="vWv-Ay-Rfi" secondAttribute="trailing" constant="16" id="nyV-os-XG8"/>
+                                            <constraint firstAttribute="trailing" secondItem="VWy-tA-g4U" secondAttribute="trailing" constant="16" id="qHl-uV-OQV"/>
+                                            <constraint firstItem="vWv-Ay-Rfi" firstAttribute="top" secondItem="Tgj-LL-Acw" secondAttribute="top" id="rd9-yS-rML"/>
+                                            <constraint firstItem="5Mz-Xe-Z3k" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="soR-wW-IvL"/>
+                                            <constraint firstItem="VWy-tA-g4U" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="tPc-CE-Hqd"/>
+                                            <constraint firstItem="1o9-VI-RCF" firstAttribute="trailing" secondItem="MDe-6U-QHM" secondAttribute="trailing" constant="16" id="tQE-D0-yKo"/>
+                                            <constraint firstItem="4wP-6l-AzQ" firstAttribute="top" secondItem="Tgj-LL-Acw" secondAttribute="bottom" constant="24" id="vqL-j4-mk3"/>
+                                            <constraint firstItem="5Mz-Xe-Z3k" firstAttribute="top" secondItem="MDe-6U-QHM" secondAttribute="bottom" constant="62" id="xAv-H2-t6S"/>
+                                            <constraint firstItem="xqV-iN-sxI" firstAttribute="leading" secondItem="1o9-VI-RCF" secondAttribute="leading" constant="16" id="yXm-hi-wlO"/>
+                                            <constraint firstItem="vWv-Ay-Rfi" firstAttribute="leading" secondItem="Tgj-LL-Acw" secondAttribute="trailing" constant="16" id="yhG-13-jcV"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="1o9-VI-RCF"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="A9u-pz-ZKP" secondAttribute="trailing" id="Xuv-tR-IZZ"/>
+                                    <constraint firstItem="A9u-pz-ZKP" firstAttribute="top" secondItem="s3E-bg-KtF" secondAttribute="top" id="anX-xo-D6M"/>
+                                    <constraint firstItem="A9u-pz-ZKP" firstAttribute="leading" secondItem="s3E-bg-KtF" secondAttribute="leading" id="k5s-Zm-itq"/>
+                                    <constraint firstAttribute="bottom" secondItem="A9u-pz-ZKP" secondAttribute="bottom" id="ugP-8j-hBi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1764705882" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s3E-bg-KtF" firstAttribute="leading" secondItem="d6D-6R-Pco" secondAttribute="leading" id="CLf-NF-Gug"/>
+                            <constraint firstItem="s3E-bg-KtF" firstAttribute="top" secondItem="d6D-6R-Pco" secondAttribute="top" constant="-20" id="nYn-yE-5xh"/>
+                            <constraint firstItem="d6D-6R-Pco" firstAttribute="trailing" secondItem="s3E-bg-KtF" secondAttribute="trailing" id="tN7-dG-2jE"/>
+                            <constraint firstItem="d6D-6R-Pco" firstAttribute="bottom" secondItem="s3E-bg-KtF" secondAttribute="bottom" id="w2l-m6-z9h"/>
+                            <constraint firstItem="A9u-pz-ZKP" firstAttribute="width" secondItem="CO1-Sh-voC" secondAttribute="width" id="zpD-Bp-03Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d6D-6R-Pco"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" id="TY7-Uz-q8p">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-12"/>
                     </tabBarItem>
+                    <size key="freeformSize" width="375" height="1800"/>
+                    <connections>
+                        <outlet property="scroll" destination="s3E-bg-KtF" id="e1r-4c-SIP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixs-43-4Gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1590" y="856"/>
+            <point key="canvasLocation" x="-1591.2" y="855.47226386806608"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="Ffx-C3-Grq">
@@ -361,4 +533,9 @@
             <point key="canvasLocation" x="-306" y="856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goodLuck" width="332" height="324"/>
+        <image name="organizeLottery" width="353" height="242"/>
+        <image name="saveWorld" width="184" height="324"/>
+    </resources>
 </document>

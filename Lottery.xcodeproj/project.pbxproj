@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		524E2EE91F9C81CF0087397F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E2EE81F9C81CF0087397F /* CustomTabBarController.swift */; };
+		524E2EEB1F9C96710087397F /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E2EEA1F9C96710087397F /* aboutVC.swift */; };
 		52A007341F9B70B600FED649 /* ParticleEffectsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */; };
 		52A007401F9BA5A800FED649 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A007361F9BA5A200FED649 /* Lato-HairlineItalic.ttf */; };
 		52A007411F9BA5A800FED649 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A007371F9BA5A300FED649 /* Lato-Hairline.ttf */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		524E2EE81F9C81CF0087397F /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		524E2EEA1F9C96710087397F /* aboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEffectsExtension.swift; sourceTree = "<group>"; };
 		52A007361F9BA5A200FED649 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
 		52A007371F9BA5A300FED649 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				52A007331F9B70B600FED649 /* ParticleEffectsExtension.swift */,
 				52A0074A1F9BC7DE00FED649 /* CustomNavigationController.swift */,
 				524E2EE81F9C81CF0087397F /* CustomTabBarController.swift */,
+				524E2EEA1F9C96710087397F /* aboutVC.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				52A0074B1F9BC7DE00FED649 /* CustomNavigationController.swift in Sources */,
 				52C2AE061F9B49B8005B495A /* LotteryTableViewDataSource.swift in Sources */,
 				BB3A85ED1F9B5A31009691E7 /* UserDefaults.swift in Sources */,
+				524E2EEB1F9C96710087397F /* aboutVC.swift in Sources */,
 				BB3A85D41F9B5751009691E7 /* LotteryTableViewController.swift in Sources */,
 				52C2ADF31F9B4749005B495A /* AppDelegate.swift in Sources */,
 				BB3A85EB1F9B59F2009691E7 /* LoginViewContrioller.swift in Sources */,
@@ -576,10 +580,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ULF3E829Y;
+				DEVELOPMENT_TEAM = 9FQ7VTZ7B9;
 				INFOPLIST_FILE = Lottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ccucu.Lottery;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmin.Lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
@@ -593,10 +597,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ULF3E829Y;
+				DEVELOPMENT_TEAM = 9FQ7VTZ7B9;
 				INFOPLIST_FILE = Lottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ccucu.Lottery;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmin.Lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
