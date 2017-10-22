@@ -17,9 +17,4 @@ class AboutVC: UIViewController{
             return .lightContent
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        scroll.contentInset.top = -20
-    }
 }

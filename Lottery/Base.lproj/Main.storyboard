@@ -496,7 +496,7 @@ You can win various prizes, ranging from money to cool experiences
                         <color key="backgroundColor" red="0.12941176469999999" green="0.1764705882" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="s3E-bg-KtF" firstAttribute="leading" secondItem="d6D-6R-Pco" secondAttribute="leading" id="CLf-NF-Gug"/>
-                            <constraint firstItem="s3E-bg-KtF" firstAttribute="top" secondItem="d6D-6R-Pco" secondAttribute="top" constant="-20" id="nYn-yE-5xh"/>
+                            <constraint firstItem="s3E-bg-KtF" firstAttribute="top" secondItem="d6D-6R-Pco" secondAttribute="top" id="nYn-yE-5xh"/>
                             <constraint firstItem="d6D-6R-Pco" firstAttribute="trailing" secondItem="s3E-bg-KtF" secondAttribute="trailing" id="tN7-dG-2jE"/>
                             <constraint firstItem="d6D-6R-Pco" firstAttribute="bottom" secondItem="s3E-bg-KtF" secondAttribute="bottom" id="w2l-m6-z9h"/>
                             <constraint firstItem="A9u-pz-ZKP" firstAttribute="width" secondItem="CO1-Sh-voC" secondAttribute="width" id="zpD-Bp-03Y"/>
