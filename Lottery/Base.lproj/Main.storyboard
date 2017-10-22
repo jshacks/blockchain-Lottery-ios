@@ -160,19 +160,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-Rt-puu">
-                                <rect key="frame" x="16" y="458" width="277" height="25.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-Rt-puu">
+                                <rect key="frame" x="16" y="430" width="188.5" height="25.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Winnings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-oB-SLB">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="25.5"/>
-                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price / ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-oB-SLB">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGD-Sf-LQ0">
-                                        <rect key="frame" x="188.5" y="0.0" width="88.5" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 ETH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGD-Sf-LQ0">
+                                        <rect key="frame" x="131.5" y="0.0" width="57" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.1764705882" green="0.99607843139999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -180,25 +180,22 @@
                                     <constraint firstItem="ANl-oB-SLB" firstAttribute="width" secondItem="w5C-Rt-puu" secondAttribute="width" multiplier="2/3" id="g1k-Gd-hJC"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uik-Rq-uCS">
-                                <rect key="frame" x="16" y="499.5" width="343" height="25.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uik-Rq-uCS">
+                                <rect key="frame" x="16" y="471.5" width="191" height="25.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-7f-fvH">
-                                        <rect key="frame" x="0.0" y="0.0" width="228.5" height="25.5"/>
-                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tickets left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-7f-fvH">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="283" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hJ-TT-xgu">
-                                        <rect key="frame" x="232.5" y="0.0" width="110.5" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 of 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hJ-TT-xgu">
+                                        <rect key="frame" x="114" y="0.0" width="77" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.1764705882352941" green="0.99607843137254903" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="HNR-7f-fvH" firstAttribute="width" secondItem="uik-Rq-uCS" secondAttribute="width" multiplier="2/3" id="jwz-yG-Xlw"/>
-                                </constraints>
                             </stackView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-M6-AkS">
                                 <rect key="frame" x="83" y="132" width="209.5" height="209.5"/>
@@ -221,22 +218,41 @@
                                 <color key="textColor" white="1" alpha="0.64937279930000003" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="udW-jo-Ny4">
+                                <rect key="frame" x="16" y="505" width="201" height="25.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Prize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-6U-cZq">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 ETH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHd-YX-5bp">
+                                        <rect key="frame" x="132" y="0.0" width="69" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
+                                        <color key="textColor" red="0.1764705882" green="0.99607843139999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.1764705882352941" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="centerX" secondItem="uUT-Ok-QdB" secondAttribute="centerX" id="7XH-qf-h7f"/>
+                            <constraint firstItem="3Uk-hh-yZj" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="udW-jo-Ny4" secondAttribute="bottom" constant="24" id="Deh-IM-K1j"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="centerX" secondItem="cFn-M6-AkS" secondAttribute="centerX" id="IlN-fN-ymI"/>
                             <constraint firstItem="w5C-Rt-puu" firstAttribute="leading" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="TUk-Q8-W9I"/>
+                            <constraint firstItem="udW-jo-Ny4" firstAttribute="top" secondItem="uik-Rq-uCS" secondAttribute="bottom" constant="8" id="TbH-L1-3OQ"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="top" secondItem="cFn-M6-AkS" secondAttribute="bottom" constant="8" id="U08-1F-p0v"/>
+                            <constraint firstItem="udW-jo-Ny4" firstAttribute="leading" secondItem="uik-Rq-uCS" secondAttribute="leading" id="UGj-JE-GyQ"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="trailing" secondItem="cFn-M6-AkS" secondAttribute="trailing" id="VJM-Jh-VtN"/>
                             <constraint firstItem="uik-Rq-uCS" firstAttribute="leading" secondItem="w5C-Rt-puu" secondAttribute="leading" id="XwC-h4-mgM"/>
                             <constraint firstItem="3Uk-hh-yZj" firstAttribute="trailing" secondItem="hs6-6p-lEI" secondAttribute="trailing" constant="16" id="eRM-SZ-Of3"/>
                             <constraint firstItem="hs6-6p-lEI" firstAttribute="top" secondItem="dbD-fp-yoK" secondAttribute="bottom" constant="8" id="fWN-Hl-l7s"/>
                             <constraint firstItem="dbD-fp-yoK" firstAttribute="leading" secondItem="cFn-M6-AkS" secondAttribute="leading" id="jkn-Tg-7Ca"/>
-                            <constraint firstItem="3Uk-hh-yZj" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uik-Rq-uCS" secondAttribute="bottom" constant="27.5" id="kqG-Nt-PQy"/>
                             <constraint firstItem="uik-Rq-uCS" firstAttribute="top" secondItem="w5C-Rt-puu" secondAttribute="bottom" constant="16" id="ksl-VD-qmV"/>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="pTw-RS-uTl"/>
-                            <constraint firstItem="w5C-Rt-puu" firstAttribute="top" secondItem="hs6-6p-lEI" secondAttribute="bottom" constant="64" id="vKY-vc-xFD"/>
+                            <constraint firstItem="w5C-Rt-puu" firstAttribute="top" secondItem="hs6-6p-lEI" secondAttribute="bottom" constant="36" id="vKY-vc-xFD"/>
                             <constraint firstItem="cFn-M6-AkS" firstAttribute="top" secondItem="3Uk-hh-yZj" secondAttribute="top" constant="16" id="wSP-O1-4jJ"/>
                             <constraint firstItem="3Uk-hh-yZj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cFn-M6-AkS" secondAttribute="trailing" constant="16" id="xXH-hh-WSf"/>
                             <constraint firstItem="hs6-6p-lEI" firstAttribute="leading" secondItem="3Uk-hh-yZj" secondAttribute="leading" constant="16" id="zO7-VS-wbI"/>
@@ -406,7 +422,7 @@ The money raised through selling lottery tickets will be used to pay prizes and 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a lottery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wP-DJ-dlz">
-                                                <rect key="frame" x="118" y="1039.5" width="241" height="42"/>
+                                                <rect key="frame" x="118" y="1039.5" width="241" height="41"/>
                                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -560,7 +576,7 @@ You can win various prizes, ranging from money to cool experiences
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo8-mX-hpJ">
                                                 <rect key="frame" x="16" y="547.5" width="343" height="84"/>
-                                                <string key="text">You can buy tickets by sending ETH to the address associated with the lottery you want to enter. For our current lottery, one ticket costs 1 ETH. Send the amount of ETH you want to buy tickets for to this address: xxxxxx.</string>
+                                                <string key="text">You can buy tickets by sending ETH to the address associated with the lottery you want to enter. For our current lottery, one ticket costs 1 ETH. Send the amount of ETH you want to buy tickets for to this address: 0x83aedfffd13c42b6e91ef6569e3823ed55ae58ce.</string>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
